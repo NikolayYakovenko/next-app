@@ -1,0 +1,25 @@
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.formRow {
+    flex: 1 1 0;
+    margin-bottom: 15px;
+}
+
+.formLabelWrapper {
+    margin-bottom: 5px;
+
+}
+
+.formLabel {
+    font-weight: bold;
+}
+
+.formInput {
+    width: 100%;
+}
+

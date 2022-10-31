@@ -1,23 +1,35 @@
-import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
+import Head from 'next/head';
+
+import styles from '../../styles/common.module.css';
+import formStyles from './login.module.css';
+
+import { MainLayout } from '../../app/components/MainLayout';
 
 export default function Login() {
   return (
-    <div className={styles.container}>
+    <MainLayout>
       <Head>
         <title>Login</title>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>Login page</h1>
-        <form >
-          <div>
-            <label htmlFor="email">Email</label>
-            <input id="email" type="email"/>
+        <form className={formStyles.formWrapper}>
+          <div className={formStyles.formRow}>
+            <div className={formStyles.formLabelWrapper}>
+              <label className={formStyles.formLabel} htmlFor="email">
+                Email
+              </label>
+            </div>
+            <input className={formStyles.formInput} id="email" type="email" />
           </div>
-          <div>
-            <label htmlFor="password">Passoword</label>
-            <input id="password" type="password"/>
+          <div className={formStyles.formRow}>
+            <div className={formStyles.formLabelWrapper}>
+              <label className={formStyles.formLabel} htmlFor="password">
+                Password
+              </label>
+            </div>
+            <input className={formStyles.formInput} id="password" type="password" />
           </div>
 
           <div>
@@ -25,6 +37,6 @@ export default function Login() {
           </div>
         </form>
       </main>
-    </div>
-  )
+    </MainLayout>
+  );
 }

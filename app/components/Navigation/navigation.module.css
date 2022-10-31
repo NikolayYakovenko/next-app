@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navItem {
+    list-style: none;
+    transition: background-color .1s linear;
+}
+
+.navItem + .navItem {
+    margin-left: 15px;;
+}
+
+.navLink {
+    display: inline-block;
+    padding: 5px;
+    color: #485696
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}

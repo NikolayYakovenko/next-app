@@ -1,0 +1,8 @@
+.headerWrapper {
+    position:  sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: aquamarine;
+}

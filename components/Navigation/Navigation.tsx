@@ -2,7 +2,7 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import { Routes } from '../../constatnts/routes';
+import { Routes } from '../../lib/constants/routes';
 
 import navStyles from './navigation.module.css';
 

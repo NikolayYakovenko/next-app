@@ -3,3 +3,12 @@
   flex-direction: column;
   max-width: 800px;
 }
+
+.postLink {
+  color: black;
+}
+
+.postLink:hover {
+  color: #485696;
+  text-decoration: underline;
+}

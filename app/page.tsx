@@ -1,5 +1,3 @@
-'use client';
-
 import { Metadata } from 'next';
 import React from 'react';
 
@@ -12,11 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  let name = 'test';
-
   return (
     <main className={styles.main}>
-      {name}
       <h1 className={styles.title}>Main page</h1>
     </main>
   );

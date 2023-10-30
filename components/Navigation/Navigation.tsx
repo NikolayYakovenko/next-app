@@ -19,6 +19,11 @@ export const Navigation = () => {
           Login
         </Link>
       </li>
+      <li className={navStyles.navItem}>
+        <Link className={navStyles.navLink} href={Routes.posts}>
+          Posts
+        </Link>
+      </li>
     </ul>
   );
 };
